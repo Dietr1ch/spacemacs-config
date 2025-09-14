@@ -11,7 +11,7 @@
 ;;   ./languages/python.el
 ;;   ./languages/rust.el
 ;;   ./languages/org.el
-;; ./customise.el
+;; ~/.cache/emacs/customise.el
 
 (defun dotspacemacs/layers ()
 	"Layer configuration:
