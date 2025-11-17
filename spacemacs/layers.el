@@ -160,13 +160,16 @@
 		lsp-enable-symbol-highlighting t
 		lsp-enable-xref t
 		lsp-format-buffer-on-save t
+		;; https://emacs-lsp.github.io/lsp-mode/page/settings/headerline/
 		lsp-headerline-breadcrumb-enable t
 		lsp-headerline-breadcrumb-segments '(project file symbols)
 		lsp-inlay-hint-enable t
 		lsp-insert-final-newline t
+		;; https://emacs-lsp.github.io/lsp-mode/page/settings/lens/
 		lsp-lens-enable t
 		lsp-log-io nil
 		lsp-log-max-message-log-max 1000
+		;; https://emacs-lsp.github.io/lsp-mode/page/settings/modeline/
 		lsp-modeline-code-actions-enable t
 		lsp-modeline-diagnostics-enable t
 		lsp-semantic-tokens-enable t

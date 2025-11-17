@@ -176,14 +176,6 @@
 
 ;; Recentf
 (with-eval-after-load 'recentf
-	;; Kill-hook
-	(add-hook 'kill-emacs-hook
-						'recentf-save-list)
-	;; Timer
-	(when (daemonp)
-		(run-at-time nil (* 3 60)
-								 'recentf-save-list))
-
 	;; Recentf exclusions
 	(add-to-list 'recentf-exclude "/\\.cache/")
 	(add-to-list 'recentf-exclude "/target/")
@@ -192,6 +184,14 @@
 
 	(add-to-list 'recentf-exclude "^/nix/")
 	(add-to-list 'recentf-exclude "^/tmp/")
+
+	;; Kill-hook
+	(add-hook 'kill-emacs-hook 'recentf-save-list)
+
+	;; Timer
+	(when (daemonp)
+		(run-at-time nil (* 3 60)
+								 'recentf-save-list))
 	)
 
 (spacemacs/set-leader-keys
@@ -272,7 +272,7 @@
 
 
 
-;; ispell
+;; ispells
 ;; ------
 
 ;; (with-eval-after-load 'ispell

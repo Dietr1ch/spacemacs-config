@@ -1,5 +1,6 @@
 ;; dotspacemacs/user-init ()
 
+
 ;; emacs-lsp-booster (https://github.com/blahgeek/emacs-lsp-booster)
 ;; -----------------
 (defun lsp-booster--advice-json-parse (old-fn &rest args)
@@ -39,20 +40,24 @@
 
 ;; mpdel
 ;; -----
-(setq libmpdel-hostname (or (getenv "MPD_HOST") "localhost"))
-(setq libmpdel-port (or (getenv "MPD_PORT") 6600))
+(setq
+ libmpdel-hostname (or (getenv "MPD_HOST") "localhost")
+ libmpdel-port (or (getenv "MPD_PORT") 6600)
+ )
 
 
 ;; TRAMP
 ;; -----
 ;; Making TRAMP go brrrr: https://coredumped.dev/2025/06/18/making-tramp-go-brrrr./ (https://news.ycombinator.com/item?id=44356346)
-(setq remote-file-name-inhibit-locks t
-			tramp-use-scp-direct-remote-copying t
-			remote-file-name-inhibit-auto-save-visited t
+(setq
+ remote-file-name-inhibit-locks t
+ tramp-use-scp-direct-remote-copying t
+ remote-file-name-inhibit-auto-save-visited t
 
-			tramp-copy-size-limit (* 1024 1024) ;; 1 MB
-			;; tramp-verbose 2
-			)
+ tramp-copy-size-limit (* 1024 1024) ;; 1 MB
+ ;; tramp-verbose 2
+ )
+
 (connection-local-set-profile-variables
  'remote-direct-async-process
  '((tramp-direct-async-process . t)))
