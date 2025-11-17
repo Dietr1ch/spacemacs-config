@@ -375,7 +375,6 @@
 		rustic-lsp-server 'rust-analyzer
 
 		rustic-format-trigger 'on-save  ;; 'on-compile
-		rustic-rustfmt-args "--edition=2024"
 
 		rustic-cargo-clippy-trigger-fix 'on-compile
 		rustic-default-clippy-arguments "--all-targets --all-features"
