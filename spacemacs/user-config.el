@@ -27,8 +27,8 @@
 
 ;; https://systemcrafters.net/emacs-from-scratch/the-best-default-settings/
 ;; Move customizations to a dedicated file
-;; ~/.cache/emacs/customise.el
-(setq custom-file "~/.cache/emacs/customise.el")
+;; ~/.cache/spacemacs-dev/customise.el
+(setq custom-file (concat spacemacs-cache-directory "customise.el"))
 (load custom-file 'noerror 'nomessage)
 (setq use-dialog-box nil)
 ;; Revert buffers when the underlying file has changed
