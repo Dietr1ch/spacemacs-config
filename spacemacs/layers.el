@@ -438,6 +438,9 @@
 		org-enable-modern-support t
 		org-image-actual-width 1.0
 		org-enable-sticky-header t
+		org-sticky-header-full-path 'full
+		org-sticky-header-prefix ""
+
 		;; HTML export (https://orgmode.org/manual/Publishing-options.html)
 		org-export-with-smart-quotes t
 		org-html-prefer-user-labels t
