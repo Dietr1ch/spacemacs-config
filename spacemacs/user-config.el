@@ -291,11 +291,6 @@
 ;; https://www.spacemacs.org/layers/+checkers/spell-checking/README.html#enabling-multi-dictionary-support-with-hunspell
 (with-eval-after-load "ispell"
 	(setq ispell-program-name "hunspell")
-	;; https://emacs.stackexchange.com/questions/78599/flyspell-and-or-ispell-hunspell-quirk-for-contraction-words-shouldnt-isnt
-	(add-to-list
-	 'ispell-local-dictionary-alist
-	 '("en_GB" "[[:alpha:]]" "[^[:alpha:]]" "['’]" t ("-d" "en_GB") nil utf-8)
-	 )
 
 	;; ispell-set-spellchecker-params has to be called
 	;; before ispell-hunspell-add-multi-dic will work

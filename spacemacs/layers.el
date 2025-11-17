@@ -85,6 +85,18 @@
 		ispell-program-name "hunspell"
 		ispell-dictionary "en_GB"
 		ispell-local-dictionary "en_GB"
+		;; https://emacs.stackexchange.com/questions/78599/flyspell-and-or-ispell-hunspell-quirk-for-contraction-words-shouldnt-isnt
+		;; https://emacs.stackexchange.com/questions/19982/hunspell-error-in-emacs
+		ispell-local-dictionary-alist '(
+																		("en_GB"
+																		 "[[:alpha:]]"
+																		 "[^[:alpha:]]"
+																		 "[']"
+																		 nil
+																		 nil
+																		 nil
+																		 utf-8)
+																		)
 		)
 	 dtrt-indent ;; https://www.spacemacs.org/layers/+misc/dtrt-indent/README.html
 	 ;; TODO: Add harper
