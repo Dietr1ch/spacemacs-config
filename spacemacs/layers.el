@@ -165,7 +165,92 @@
 		lsp-use-plists t
 		lsp-eldoc-enable-hover t
 		lsp-eldoc-render-all t
+		lsp-enable-file-watchers t
 		lsp-enable-folding t
+		lsp-file-watch-ignored-files '(
+																	 ;; SCM tools
+																	 "[/\\\\]\\.git\\'"
+																	 "[/\\\\]\\.github\\'"
+																	 "[/\\\\]\\.gitlab\\'"
+																	 "[/\\\\]\\.circleci\\'"
+																	 "[/\\\\]\\.hg\\'"
+																	 "[/\\\\]\\.bzr\\'"
+																	 "[/\\\\]_darcs\\'"
+																	 "[/\\\\]\\.svn\\'"
+																	 "[/\\\\]_FOSSIL_\\'"
+																	 ;; IDE or build tools
+																	 "[/\\\\]\\.idea\\'"
+																	 "[/\\\\]\\.ensime_cache\\'"
+																	 "[/\\\\]\\.eunit\\'"
+																	 "[/\\\\]node_modules"
+																	 "[/\\\\]\\.yarn\\'"
+																	 "[/\\\\]\\.turbo\\'"
+																	 "[/\\\\]\\.fslckout\\'"
+																	 "[/\\\\]\\.tox\\'"
+																	 "[/\\\\]\\.nox\\'"
+																	 "[/\\\\]dist\\'"
+																	 "[/\\\\]dist-newstyle\\'"
+																	 "[/\\\\]\\.hifiles\\'"
+																	 "[/\\\\]\\.hiefiles\\'"
+																	 "[/\\\\]\\.stack-work\\'"
+																	 "[/\\\\]\\.bloop\\'"
+																	 "[/\\\\]\\.bsp\\'"
+																	 "[/\\\\]\\.metals\\'"
+																	 "[/\\\\]target\\'"
+																	 "[/\\\\]\\.ccls-cache\\'"
+																	 "[/\\\\]\\.vs\\'"
+																	 "[/\\\\]\\.vscode\\'"
+																	 "[/\\\\]\\.venv\\'"
+																	 "[/\\\\]\\.mypy_cache\\'"
+																	 "[/\\\\]\\.pytest_cache\\'"
+																	 ;; Swift Package Manager
+																	 "[/\\\\]\\.build\\'"
+																	 ;; Python
+																	 "[/\\\\]__pycache__\\'"
+																	 "[/\\\\]site-packages\\'"
+																	 "[/\\\\].pyenv\\'"
+																	 ;; Autotools output
+																	 "[/\\\\]\\.deps\\'"
+																	 "[/\\\\]build-aux\\'"
+																	 "[/\\\\]autom4te.cache\\'"
+																	 "[/\\\\]\\.reference\\'"
+																	 ;; Bazel
+																	 "[/\\\\]bazel-[^/\\\\]+\\'"
+																	 ;; CSharp
+																	 "[/\\\\]\\.cache[/\\\\]lsp-csharp\\'"
+																	 "[/\\\\]\\.meta\\'"
+																	 "[/\\\\]\\.nuget\\'"
+																	 ;; Unity
+																	 "[/\\\\]Library\\'"
+																	 ;; Clojure
+																	 "[/\\\\]\\.lsp\\'"
+																	 "[/\\\\]\\.clj-kondo\\'"
+																	 "[/\\\\]\\.shadow-cljs\\'"
+																	 "[/\\\\]\\.babel_cache\\'"
+																	 "[/\\\\]\\.cpcache\\'"
+																	 "[/\\\\]\\checkouts\\'"
+																	 ;; Gradle
+																	 "[/\\\\]\\.gradle\\'"
+																	 ;; Maven
+																	 "[/\\\\]\\.m2\\'"
+																	 ;; .Net Core build-output
+																	 "[/\\\\]bin/Debug\\'"
+																	 "[/\\\\]obj\\'"
+																	 ;; OCaml and Dune
+																	 "[/\\\\]_opam\\'"
+																	 "[/\\\\]_build\\'"
+																	 ;; Elixir
+																	 "[/\\\\]\\.elixir_ls\\'"
+																	 ;; Elixir Credo
+																	 "[/\\\\]\\.elixir-tools\\'"
+																	 ;; terraform and terragrunt
+																	 "[/\\\\]\\.terraform\\'"
+																	 "[/\\\\]\\.terragrunt-cache\\'"
+																	 ;; nix-direnv
+																	 "[/\\\\]\\result"
+																	 "[/\\\\]\\result-bin"
+																	 "[/\\\\]\\.direnv\\'"
+																	 )
 		lsp-enable-indentation t
 		lsp-enable-on-type-formatting t
 		lsp-enable-snippet t
@@ -193,6 +278,7 @@
 		lsp-ui-doc-enable t
 		lsp-ui-doc-include-signature t
 		;; lsp-ui-sideline (https://github.com/emacs-lsp/lsp-ui#lsp-ui-sideline)
+		lsp-ui-sideline-enable t
 		lsp-ui-sideline-show-symbol t
 		;; lsp-ui-peek (https://github.com/emacs-lsp/lsp-ui#lsp-ui-peek)
 
