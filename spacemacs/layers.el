@@ -80,6 +80,7 @@
 		spell-checking-enable-auto-dictionary t
 		enable-flyspell-auto-completion t
 
+		ispell-quietly t
 		;; Hunspel
 		ispell-program-name "hunspell"
 		ispell-dictionary "en_GB"
