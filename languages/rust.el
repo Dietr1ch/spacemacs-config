@@ -39,10 +39,11 @@
                                            ("pub"      . ?𝓟)  ;; MATHEMATICAL BOLD SCRIPT CAPITAL P
                                            ("fn"       . ?𝓕)  ;; MATHEMATICAL BOLD SCRIPT CAPITAL F
                                            ("for"      . ?∀)  ;; FOR ALL
+                                           ("if"       . ?？) ;; FULLWIDTH QUESTION MARK
+                                           ("else"     . ?¿)  ;; INVERTED QUESTION MARK
                                            ("match"    . ?⎇)  ;; ALTERNATIVE KEY SYMBOL
                                            ("while"    . ?⟳)  ;; CLOCKWISE GAPPED CIRCLE ARROW
                                            ("loop"     . ?⥁)  ;; CLOCKWISE CLOSED CIRCLE ARROW
-                                           ;; ("loop"     . ?⟳)  ;; CLOCKWISE GAPPED CIRCLE ARROW
                                            ("in"       . ?∈)  ;; ELEMENT OF
                                            ("not in"   . ?∉)  ;; NOT AN ELEMENT OF
                                            ("continue" . ?↰)  ;; UPWARDS ARROW WITH TIP LEFTWARDS
@@ -75,10 +76,33 @@
                                            ("debug_assert_ok!"  . ?✔)  ;; HEAVY CHECK MARK
                                            ("std::process::exit"   . ?†)  ;; DAGGER
 
-                                           ("#[inline(always)]"   . ?☇)  ;; LIGHTNING
-                                           ("#[inline(never)]"   . ?🐌)  ;; SNAIL
+                                           ("#[inline(always)]"     . ?☇)  ;; LIGHTNING
+                                           ("#[inline(never)]"      . ?🐌)  ;; SNAIL
+                                           ("#[cold]"               . ?⛇)  ;; BLACK SNOWMAN
+                                           ("#[tailcall::tailcall]" . ?➿)  ;; DOUBLE CURLY LOOP
 
                                            ("test"  . ?🧪)  ;; TEST TUBE
+                                           ("#[test]"  . ?🔬)  ;; MICROSCOPE
+                                           ("#[gtest]"  . ?⚗)  ;; ALEMBIC
+
+                                           ;; googletest
+
+                                           ;; ("verify_that!"  . ?□) ;; WHITE SQUARE
+
+                                           ;; ("assert_eq!"  . ?⩮) ;; EQUALS WITH ASTERISK
+                                           ("expect_eq!"  . ?≟) ;; QUESTIONED EQUAL TO
+                                           ;; ("expect_false!"    . ?⊥)
+                                           ;; ("expect_float_eq!" . ?≅)
+                                           ;; ("expect_ge!"       . ?≥)
+                                           ;; ("expect_gt!"       . ?>)
+                                           ;; ("expect_le!"       . ?≤)
+                                           ;; ("expect_lt!"       . ?<)
+                                           ;; ("expect_ne!"       . ?≠)
+                                           ;; ("expect_near!"     . ?⩰)
+                                           ;; ("expect_pred!"     . ??)
+                                           ("assert_that!"  . ?❕) ;; WHITE EXCLAMATION MARK ORNAMENT
+                                           ("expect_that!"  . ?❔) ;; WHITE QUESTION MARK ORNAMENT
+                                           ;; ("expect_true!"     . ?⊤)
 
                                            ;; Arrows (They have nice ligatures)
                                            ;; ("->"     . ?→)  ;; RIGHTWARDS ARROW
@@ -169,10 +193,11 @@
                                            ("from" . ?⤺)    ;; TOP ARC ANTICLOCKWISE ARROW
                                            ("into" . ?⤼)  ;; TOP ARC CLOCKWISE ARROW WITH MINUS
                                            ;; Result
+                                           (".get()"        . ?⁍)  ;; BLACK RIGHTWARDS BULLET
                                            ("unwrap"            . ?‼)  ;; DOUBLE EXCLAMATION MARK
                                            ("unwrap_or_else"    . ?⁈)  ;; QUESTION EXCLAMATION MARK
                                            ("unwrap_or"         . ?⁇)  ;; DOUBLE QUESTION MARK
-                                           ("unwrap_or_default" . ?⁇)  ;; DOUBLE QUESTION MARK
+                                           ("unwrap_or_default" . ?⁈)  ;; QUESTION EXCLAMATION MARK
                                            ;; Sockets
                                            ("recv" . ?↫)  ;; LEFTWARDS ARROW WITH LOOP
                                            ("send" . ?↬)  ;; RIGHTWARDS ARROW WITH LOOP
@@ -183,6 +208,17 @@
                                            (".push"   . ?⧺)  ;; DOUBLE PLUS
                                            (".extend" . ?⧻)  ;; TRIPLE PLUS
                                            (".insert" . ?⟜) ;; LEFT MULTIMAP
+                                           (".remove" . ?∖) ;; SET MINUS
+                                           (".pop()"       . ?↠)  ;; RIGHT TWO HEADED ARROW
+                                           (".pop_back()"  . ?⤠)  ;; RIGHTWARDS ARROW FROM BAR TO BLACK DIAMOND
+                                           (".pop_front()" . ?⤟)  ;; LEFTWARDS ARROW FROM BAR TO BLACK DIAMOND
+                                           (".push_back"  . ?⇤)  ;; LEFTWARDS ARROW TO BAR
+                                           (".push_front" . ?⇥)  ;; RIGHTWARDS ARROW TO BAR
+                                           ;; HashMap
+                                           (".get"        . ?@)  ;; COMMERCIAL AT
+                                           (".entry"      . ?⎆)  ;; ENTER SYMBOL
+                                           (".or_insert"  . ?≟)  ;; QUESTIONED EQUAL TO
+                                           (".or_default" . ?⁈)  ;; QUESTION EXCLAMATION MARK
 
                                            ;; Numbers  (https://doc.rust-lang.org/std/primitive.f64.html)
                                            (".add"     . ?∔)  ;; DOT PLUS
@@ -212,7 +248,7 @@
                                            ;; Fields (MATHEMATICAL DOUBLE-STRUCK CAPITAL)
                                            ("bool"   . ?𝔹)  ;; MATHEMATICAL DOUBLE-STRUCK CAPITAL B
                                            ("String" . ?𝕊)  ;; MATHEMATICAL DOUBLE-STRUCK CAPITAL S
-                                           ;; ("to_string()" . ?𝕊)  ;; MATHEMATICAL DOUBLE-STRUCK CAPITAL S
+                                           ;; ("to_string()" . ?𝕤)  ;; MATHEMATICAL DOUBLE-STRUCK SMALL S
                                            ;; ℤ: DOUBLE-STRUCK CAPITAL Z
                                            ;; ("i8"    . (#x2124 #x38))            ;; DOUBLE-STRUCK CAPITAL Z: ℤ8
                                            ;; ("i16"   . (#x2124 #x31 #x36))       ;; DOUBLE-STRUCK CAPITAL Z: ℤ16
@@ -243,4 +279,4 @@
                                            ("Vec"     .   ?𝕍)  ;; MATHEMATICAL DOUBLE-STRUCK CAPITAL V: 𝕍
                                            ;; ("vec!"     .  ?𝕍)  ;; MATHEMATICAL DOUBLE-STRUCK CAPITAL V: 𝕍
                                            ))
-            ))
+            ))  ;; add-hook 'rust-mode-hook
