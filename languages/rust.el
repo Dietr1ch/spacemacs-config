@@ -238,12 +238,10 @@
                                            (".powf"    . ?⌃) ;; UP ARROWHEAD
                                            ("INFINITY" . ?∞)  ;; INFINITY
 
-                                           ;; ("next" . ?∞)  ;; INFINITY
-                                           ;; ("prev" . ?∞)  ;; INFINITY
-                                           ;; ("send" . ?∞)  ;; INFINITY
-                                           ;; ("recv" . ?∞)  ;; INFINITY
-                                           ;; ("first" . ?⊢)  ;; RIGHT TACK
-                                           ;; ("last"  . ?⊣)  ;; LEFT TACK
+                                           ("next()" . ?≻)  ;; SUCCEEDS
+                                           ("prev()" . ?≺)  ;; PRECEDES
+                                           ("first()" . ?⪻)  ;; DOUBLE PRECEDES
+                                           ("last()"  . ?⪼)  ;; DOUBLE SUCCEEDS
 
                                            ;; Fields (MATHEMATICAL DOUBLE-STRUCK CAPITAL)
                                            ("bool"   . ?𝔹)  ;; MATHEMATICAL DOUBLE-STRUCK CAPITAL B
