@@ -880,6 +880,9 @@
 		latex-backend 'lsp
 		latex-refresh-preview t
 		)
+	 (pdf ;; https://www.spacemacs.org/layers/+readers/pdf/README.html
+		:variables
+		)
 	 markdown
 	 semantic-web ;; https://www.spacemacs.org/layers/+lang/semantic-web/README.html
 	 (yaml ;; https://www.spacemacs.org/layers/+lang/yaml/README.html
@@ -994,9 +997,9 @@
 
 	 quarto-mode
 
-	 pdf-tools
-	 ;; org-pdftools
-	 ;; org-noter-pdftools
+	 ;; PDF
+	 org-pdftools
+	 org-noter-pdftools
 
 	 tree-sitter-ispell
 
