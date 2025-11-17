@@ -824,14 +824,14 @@
 		:variables
 		erc-server-list '(
 											("irc.libera.chat"  ;; "irc.ipv6.libera.chat"
-											 :port "6697"
+											 :port "6667"
 											 :ssl t
 											 ;; ERC will check your ~/.authinfo.gpg, looking for lines like
 											 ;;   machine <irc.server.url> login <YOUR_NICKNAME> password <YOUR_PASSWORD> port <PORT_NUMBER>
 											 :nick "Dietr1ch"
 											 )
 											("irc.freenode.net"
-											 :port "6697"
+											 :port "6667"
 											 :ssl t
 											 :nick "Dietr1ch"
 											 )
