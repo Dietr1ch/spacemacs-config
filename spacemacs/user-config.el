@@ -272,7 +272,7 @@
 
 
 
-;; ispells
+;; ispell
 ;; ------
 
 ;; (with-eval-after-load 'ispell
