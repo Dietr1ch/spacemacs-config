@@ -981,8 +981,8 @@
 		:location (recipe
 							 :fetcher github
 							 ;; https://github.com/org-roam/org-roam-ui
-							 :branch "main"
-							 :repo "org-roam/org-roam-ui"))
+							 :repo "org-roam/org-roam-ui"
+							 :branch "main"))
 
 	 ;; Music
 	 (eems
