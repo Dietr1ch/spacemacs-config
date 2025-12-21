@@ -486,9 +486,9 @@ It should only modify the values of Spacemacs settings."
 	 dotspacemacs-persistent-server t
 
 	 ;; List of search tool executable names. Spacemacs uses the first installed
-	 dotspacemacs-search-tools '("rg" "ag" "grep")
 	 ;; tool of the list. Supported tools are `rg', `ag', `ack' and `grep'.
 	 ;; (default '("rg" "ag" "ack" "grep"))
+	 dotspacemacs-search-tools '("rg" "ag" "ack" "grep")
 
 	 ;; The backend used for undo/redo functionality. Possible values are
 	 ;; `undo-redo', `undo-fu' and `undo-tree' see also `evil-undo-system'.
