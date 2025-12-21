@@ -1025,7 +1025,5 @@
 	 2048-game
 
 	 http
-
-	 leetcode
 	 )  ;; setq-default dotspacemacs-additional-packages
  ) ;; setq-default

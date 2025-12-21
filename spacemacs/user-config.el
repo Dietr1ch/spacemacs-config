@@ -308,22 +308,6 @@
 (setq terminal-here-linux-terminal-command 'alacritty)
 
 (setq
- oj-home-dir "~/Workspace/CP/oj"
- oj-default-online-judge 'codeforces
- oj-online-judges '(
-										(codeforces         . ((name . "Codeforces")               (url . "https://codeforces.com/contests/")))
-										(hackerrank         . ((name . "HackerRank")               (url . "https://www.hackerrank.com/challenges/")))
-										(hackerrank-contest . ((name . "HackerRank Contest")       (url . "https://www.hackerrank.com/contests/")))
-										(kattis             . ((name . "Kattis")                   (url . "https://open.kattis.com/problems/")))
-										(topcoder           . ((name . "Topcoder")                 (url . "https://www.topcoder.com/challenges/")))
-										)
- )
-(setq
- leetcode-prefer-language "rust"
- ;; leetcode-prefer-sql "psql" ;; There's no psql mentioned in leetcode--lang-suffixes
-
- leetcode-directory "~/Workspace/CP/leetcode"
- leetcode-save-solutions t
  )
 
 
