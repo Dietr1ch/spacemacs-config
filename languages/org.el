@@ -129,16 +129,3 @@
 	"<DEL> J N" 'org-roam-dailies-capture-tomorrow
 	"<DEL> J P" 'org-roam-dailies-capture-yesterday
 	)  ;; spacemacs/set-leader-keys
-
-(spacemacs|define-custom-layout "@Org"
-	:binding "o"
-	:body
-	(winum-select-window-1)
-	(find-file "~/Documents/Org/Actionable.org")
-
-	(split-window-right) ;; Create the right side (but don't move focus)
-	(winum-select-window-2) ;; Go to the right window
-	(find-file "~/Documents/Org/Inbox.org")
-
-	(org-agenda-list)
-	)

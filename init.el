@@ -6,6 +6,7 @@
 ;; ./spacemacs/layers.el
 ;; ./spacemacs/user-init.el
 ;; ./spacemacs/user-config.el
+;;   ./../layouts.el (./layouts.el)
 ;;   ./languages/cpp.el
 ;;   ./languages/haskell.el
 ;;   ./languages/python.el
@@ -295,7 +296,7 @@ It should only modify the values of Spacemacs settings."
 
 	 ;; If non-nil the default layout name is displayed in the mode-line.
 	 ;; (default nil)
-	 dotspacemacs-display-default-layout nil
+	 dotspacemacs-display-default-layout t
 
 	 ;; If non-nil then the last auto saved layouts are resumed automatically upon
 	 ;; start. (default nil)

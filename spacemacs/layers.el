@@ -2,8 +2,9 @@
 
  dotspacemacs-configuration-layers
  '(
-	 (spacemacs-layouts :variables
-											spacemacs-layouts-restrict-spc-tab t)
+	 (spacemacs-layouts ;; https://www.spacemacs.org/layers/+spacemacs/spacemacs-layouts/README.html
+		:variables
+		spacemacs-layouts-restrict-spc-tab t)
 
 	 (helm  ;; https://www.spacemacs.org/layers/+completion/helm/README.html
 		:variables

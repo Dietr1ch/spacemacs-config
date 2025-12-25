@@ -164,16 +164,6 @@
 	)
 (add-hook 'web-mode-hook 'my/web-mode-hook)
 
-
-;; Layouts
-(spacemacs|define-custom-layout "@Emacs"
-	:binding "e"
-	:body
-	(winum-select-window-1)
-	(find-file "~/.config/emacs/spacemacs-dev/config/init.el")
-	)
-
-
 ;; Recentf
 (with-eval-after-load 'recentf
 	;; Recentf exclusions
@@ -310,6 +300,7 @@
 (setq
  )
 
+(load-file (concat dotspacemacs-directory "layouts.el"))     ;; ../layouts.el
 
 (message "Loading language configuration...")
 (load-file (concat dotspacemacs-directory "languages/rust.el"))     ;; ../languages/rust.el
