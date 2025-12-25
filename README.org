@@ -1,0 +1,57 @@
+#+title: My Spacemacs configuration
+
+* Info
+This is my personal [[https://www.spacemacs.org/][spacemacs]] configuration.
+
+* Setup
+This is a simplified setup overview. Might require some backups and ~mkdir -p~.
+
+** ~chemacs2~
+Clone,
+#+begin_src fish
+git clone \
+    --origin 'upstream' \
+    --single-branch \
+    https://github.com/plexus/chemacs2.git \
+    ~/.emacs.d
+#+end_src
+
+Configure,
+#+begin_src fish
+echo -n '
+(
+ ("spacemacs-dev" . ((user-emacs-directory . "~/.config/emacs/spacemacs-dev/distro")
+                         (env . (("SPACEMACSDIR" . "~/.config/emacs/spacemacs-dev/config")))))
+ )
+' >~/.emacs-profiles.el
+
+echo spacemacs-dev >~/.emacs-profile
+#+end_src
+
+** ~spacemacs~
+
+#+begin_src fish
+git clone \
+    --origin 'upstream' \
+    --branch 'develop' \
+    --single-branch \
+    --depth 10 \
+    https://github.com/syl20bnr/spacemacs \
+    ~/.config/emacs/spacemacs-dev/distro
+#+end_src
+
+*** Configuration
+#+begin_src fish
+  git clone \
+      --origin 'gh' \
+      --single-branch \
+      https://github.com/Dietr1ch/spacemacs-config \
+      ~/.config/emacs/spacemacs-dev/config
+
+  echo "Cloning spacemacs private layers"
+  git clone \
+      --origin 'gh' \
+      --branch 'master '\
+      https://github.com/Dietr1ch/spacemacs-layer-envrc \
+      ~/.config/emacs/spacemacs-dev/distro/private/envrc
+#+end_src
