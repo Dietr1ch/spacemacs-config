@@ -109,7 +109,7 @@
 	 (tree-sitter ;; https://www.spacemacs.org/layers/+tools/tree-sitter/README.html
 		:variables
 		tree-sitter-fold-enable t
-		tree-sitter-fold-indicators-enable t
+		tree-sitter-fold-indicators-enable nil
 		tree-sitter-indent-enable t
 		tree-sitter-syntax-highlight-enable t
 		)
