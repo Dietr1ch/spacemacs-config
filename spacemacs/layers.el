@@ -19,7 +19,6 @@
 		)
 	 (treemacs ;; https://www.spacemacs.org/layers/+filetree/treemacs/README.html
 		:variables
-		;; treemacs-use-follow-mode t
 		treemacs-use-follow-mode 'tag
 		treemacs-use-filewatch-mode t
 		treemacs-use-all-the-icons-theme t
@@ -48,8 +47,6 @@
 		auto-completion-tab-key-behavior 'cycle
 
 		auto-completion-complete-with-key-sequence nil
-		;; auto-completion-complete-with-key-sequence (kbd "jk")
-		;; auto-completion-complete-with-key-sequence-delay 0.3
 
 		auto-completion-enable-sort-by-usage t
 		auto-completion-enable-help-tooltip t
@@ -108,26 +105,15 @@
 		)
 	 (tree-sitter ;; https://www.spacemacs.org/layers/+tools/tree-sitter/README.html
 		:variables
-
-		;; spacemacs-tree-sitter-hl-black-list '(
-		;;																			js2-mode
-		;;																			rjsx-mode
-		;;																			)
 		tree-sitter-fold-enable t
-		tree-sitter-fold-indicators-enable nil
-		tree-sitter-indent t
-		tree-sitter-indent-current-scopes t
+		tree-sitter-fold-indicators-enable t
 		tree-sitter-indent-enable t
-		tree-sitter-indent-rust-scopes t
-		tree-sitter-indent-rustic-scopes t
 		tree-sitter-syntax-highlight-enable t
 		)
 
 	 (llm-client  ;; https://www.spacemacs.org/layers/+web-services/llm-client/README.html
 		:variables
 		llm-client-enable-gptel t
-		;; llm-client-enable-ellama t
-
 		gptel-default-mode 'org-mode
 		;; gptel-temperature 1.0
 		gptel-model 'deepseek-r1:latest
