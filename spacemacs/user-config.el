@@ -302,6 +302,8 @@
 (setq terminal-here-linux-terminal-command 'alacritty)
 
 (setq
+ ;; Allow reading dir-locals on remote directories
+ enable-remote-dir-locals t
  )
 
 (load-file (concat dotspacemacs-directory "layouts.el"))     ;; ../layouts.el
