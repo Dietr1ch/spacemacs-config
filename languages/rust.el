@@ -2,10 +2,6 @@
 
 (add-hook 'rust-mode-hook
           (lambda ()
-
-            ;; (envrc-reload)
-            ;; (eglot)
-            ;; (company-mode-on)
             (setq
              projectile-project-test-cmd        "cargo test  --all-targets --no-fail-fast"
              projectile-project-compilation-cmd "cargo build --all-targets --keep-going"
