@@ -284,13 +284,10 @@
 
 ;; https://www.spacemacs.org/layers/+checkers/spell-checking/README.html#enabling-multi-dictionary-support-with-hunspell
 (with-eval-after-load "ispell"
-	(setq ispell-program-name "hunspell")
-
-	;; ispell-set-spellchecker-params has to be called
-	;; before ispell-hunspell-add-multi-dic will work
+	;; NOTE: `ispell-set-spellchecker-params` has to be called before `ispell-hunspell-add-multi-dic`
 	(ispell-set-spellchecker-params)
-	;; (ispell-hunspell-add-multi-dic "en_GB,es_CL,de_DE")
-	(setq ispell-dictionary "en_GB")
+	(ispell-hunspell-add-multi-dic "en_GB,es_CL,de_DE")
+	(setq ispell-dictionary "en_GB,es_CL,de_DE")
 	)
 
 
