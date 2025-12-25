@@ -372,6 +372,7 @@
 		rustic-format-trigger 'on-save  ;; 'on-compile
 
 		rustic-cargo-clippy-trigger-fix 'on-compile
+		rustic-cargo-test-runner 'nextest ;; 'cargo
 		rustic-default-clippy-arguments "--all-targets --all-features"
 		)
 	 (python ;; https://www.spacemacs.org/layers/+lang/python/README.html
