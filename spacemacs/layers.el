@@ -117,6 +117,9 @@
 		gptel-default-mode 'org-mode
 		;; gptel-temperature 1.0
 		gptel-model 'deepseek-r1:latest
+
+		llm-client-enable-ellama t
+		ellama-sessions-directory "~/Temp/AI/ellama/sessions/"
 		)
 	 (dash ;; https://www.spacemacs.org/layers/+tools/dash/README.html
 		:variables
