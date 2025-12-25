@@ -35,9 +35,8 @@
 						(setcar orig-result command-from-exec-path))
 					(message "Using emacs-lsp-booster for %s!" orig-result)
 					(cons "emacs-lsp-booster"
-								(cons "--verbose"
-											(cons "--"
-														orig-result))))
+								(cons "--"
+											orig-result)))
 			orig-result)))
 (advice-add 'lsp-resolve-final-command :around #'lsp-booster--advice-final-command)
 
