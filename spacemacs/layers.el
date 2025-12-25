@@ -84,6 +84,8 @@
 		ispell-program-name "hunspell"
 		ispell-dictionary "en_GB"
 		ispell-local-dictionary "en_GB"
+		ispell-personal-dictionary "~/Documents/Dictionaries/default"
+
 		;; https://emacs.stackexchange.com/questions/78599/flyspell-and-or-ispell-hunspell-quirk-for-contraction-words-shouldnt-isnt
 		;; https://emacs.stackexchange.com/questions/19982/hunspell-error-in-emacs
 		ispell-local-dictionary-alist '(
