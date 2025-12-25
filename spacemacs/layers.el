@@ -338,6 +338,8 @@
 		lsp-rust-full-docs t
 		lsp-rust-show-hover-context t
 		lsp-rust-show-warnings t
+
+		lsp-ron-executable "ron-lsp"
 		)
 	 (dap ;; https://www.spacemacs.org/layers/+tools/dap/README.html
 		:variables
