@@ -6,6 +6,10 @@
  user-mail-address "Dietrich@Daroch.me"
  )
 
+(setq
+ dired-listing-switches "-aBhl  --group-directories-first"
+ )
+
 ;; Browser
 ;; -------
 (setopt
