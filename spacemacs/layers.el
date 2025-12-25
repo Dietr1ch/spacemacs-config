@@ -10,6 +10,7 @@
 
 	 (helm  ;; https://www.spacemacs.org/layers/+completion/helm/README.html
 		:variables
+		helm-ag-base-command "rg --vimgrep --no-heading --smart-case"
 		helm-ag-use-grep-ignore-list nil
 		helm-position 'bottom
 		helm-rg-input-min-search-chars 2
