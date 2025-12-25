@@ -605,6 +605,12 @@ before packages are loaded."
 	(load-file (concat dotspacemacs-directory "spacemacs/user-config.el"))
 	(spacemacs/toggle-debug-on-error-off)
 	(message "Done loading user-config.el")
+
+	(message "Refreshing recent files...")
+	(recentf-cleanup)
+	(message "Refreshing recent known projects...")
+	(projectile-cleanup-known-projects)
+	(projectile-discover-projects-in-search-path)
 	)
 
 
