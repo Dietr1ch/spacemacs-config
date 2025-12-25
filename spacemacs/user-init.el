@@ -1,5 +1,9 @@
 ;; dotspacemacs/user-init ()
 
+(setq
+ display-time-24hr-format t
+ )
+
 
 ;; emacs-lsp-booster (https://github.com/blahgeek/emacs-lsp-booster)
 ;; -----------------
