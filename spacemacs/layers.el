@@ -937,6 +937,8 @@
 
  dotspacemacs-additional-packages
  '(
+	 treemacs-persp
+
 	 treesit-auto
 
 	 all-the-icons
