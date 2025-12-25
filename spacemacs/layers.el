@@ -1,3 +1,5 @@
+;; -*- mode: emacs-lisp; lexical-binding: t -*-
+
 (setq-default
 
  dotspacemacs-configuration-layers
@@ -22,9 +24,7 @@
 		treemacs-use-filewatch-mode t
 		treemacs-use-all-the-icons-theme t
 		treemacs-use-git-mode 'deferred  ;; https://github.com/Alexander-Miller/treemacs#git-mode
-		treemacs-use-scope-type 'Frames
-		;; TODO try out perspectives
-		;; treemacs-use-scope-type 'Perspectives
+		treemacs-set-scope-type 'Perspectives
 
 		treemacs-litter-directories '(
 																	;; Nix
