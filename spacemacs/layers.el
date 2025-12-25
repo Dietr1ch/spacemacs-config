@@ -111,6 +111,16 @@
 		tree-sitter-fold-enable t
 		tree-sitter-fold-indicators-enable nil
 		tree-sitter-indent-enable t
+		tree-sitter-indent-rustic-scopes '(
+																			 (indent-all where_clause)
+																			 (indent-rest function_item for_expression)
+																			 (indent-body let_declaration)
+																			 (paren-indent parameters)
+																			 (align-char-to (46 call_expression field_expression))
+																			 (aligned-siblings where_predicate)
+																			 (multi-line-text)
+																			 (outdent "}")
+																			 )
 		tree-sitter-syntax-highlight-enable t
 		)
 
