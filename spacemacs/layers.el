@@ -134,6 +134,14 @@
 		llm-client-enable-ellama t
 		ellama-sessions-directory "~/Temp/AI/ellama/sessions/"
 		)
+	 (minuet ;; ~/.config/emacs/spacemacs-dev/distro/private/minuet/README.org
+		:variables
+		minuet-provider 'openai-fim-compatible
+		minuet-end-point "http://localhost:11434/v1/completions"
+		minuet-model "qwen2.5-coder:3b"
+		minuet-n-completions 3
+		minuet-context-window 512
+		)
 	 (dash ;; https://www.spacemacs.org/layers/+tools/dash/README.html
 		:variables
 		dash-docs-docset-newpath "~/.docsets"
