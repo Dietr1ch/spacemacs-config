@@ -3,10 +3,10 @@
 	:body
 	(treemacs-do-switch-workspace "Org")
 
-	(find-file "~/Documents/Org/Actionable.org")
+	(find-file "~/Notes/Actionable.org")
 
 	(split-window-right-and-focus)
-	(find-file "~/Documents/Org/Inbox.org")
+	(find-file "~/Notes/Inbox.org")
 
 	(org-agenda-list)
 	)

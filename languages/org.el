@@ -29,7 +29,7 @@
 
 
 ;; org-mode - org-present
-;; System crafters presentation: ~/Documents/Org/Articles/20241229093831-systemcrafters_presentations_with_org_present.org
+;; System crafters presentation: ~/Notes/Articles/20241229093831-systemcrafters_presentations_with_org_present.org
 ;; TODO: Check if this really helps presenting. I think new defaults or spacemacs makes this a no-op
 (defun my/org-present-start ()
 	;; Center the presentation and wrap lines
@@ -51,19 +51,19 @@
 ;; gtd
 (defun gtd/inbox ()
 	(interactive)
-	(find-file-other-window "~/Documents/Org/Inbox.org")
+	(find-file-other-window "~/Notes/Inbox.org")
 	)  ;; defun gtd/inbox ()
 (defun gtd/actionable ()
 	(interactive)
-	(find-file-other-window "~/Documents/Org/Actionable.org")
+	(find-file-other-window "~/Notes/Actionable.org")
 	)  ;; defun gtd/actionable ()
 (defun gtd/tickler ()
 	(interactive)
-	(find-file-other-window "~/Documents/Org/Tickler.org")
+	(find-file-other-window "~/Notes/Tickler.org")
 	)  ;; defun gtd/tickler ()
 (defun gtd/wishlist ()
 	(interactive)
-	(find-file-other-window "~/Documents/Org/Wishlist.org")
+	(find-file-other-window "~/Notes/Wishlist.org")
 	)  ;; defun gtd/wishlist ()
 (spacemacs/set-leader-keys
 	"<DEL> g i" 'gtd/inbox

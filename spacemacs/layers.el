@@ -141,7 +141,7 @@
 
 	 (elfeed :variables
 					 elfeed-search-filter "@1-week-ago +unread"
-					 rmh-elfeed-org-files (list "~/Documents/Org/Feeds.org"))
+					 rmh-elfeed-org-files (list "~/Notes/Feeds.org"))
 
 	 ;; Source control  https://www.spacemacs.org/layers/LAYERS.html#source-control
 	 (git  ;; https://www.spacemacs.org/layers/+source-control/git/README.html
@@ -416,26 +416,26 @@
 
 	 (org ;; https://www.spacemacs.org/layers/+emacs/org/README.html
 		:variables
-		org-directory "~/Documents/Org/"
+		org-directory "~/Notes/"
 		org-default-notes-file (concat org-directory "Inbox.org")
 		org-project-capture-projects-file "TODOs.org"
 		org-capture-templates '(
 														;; https://orgmode.org/manual/Capture-templates.html
 														("t" "Task" entry
-														 (file+headline "~/Documents/Org/Inbox.org" "Tasks")
+														 (file+headline "~/Notes/Inbox.org" "Tasks")
 														 "** %?")
 														("T" "TODO" entry
-														 (file+headline "~/Documents/Org/Inbox.org" "Tasks")
+														 (file+headline "~/Notes/Inbox.org" "Tasks")
 														 "** TODO %?")
 
 														;; Org Capture
 														;; https://orgmode.org/worg/org-contrib/org-protocol.html
 														;; ~/.local/share/applications/emacsclient-capture.desktop
 														("l" "Protocol Link" entry
-														 (file+headline "~/Documents/Org/Inbox.org" "Web")
+														 (file+headline "~/Notes/Inbox.org" "Web")
 														 "** %?[[%:link][%:description]]\nCaptured On: %U")
 														("L" "Protocol Link with Selection" entry
-														 (file+headline "~/Documents/Org/Inbox.org" "Web")
+														 (file+headline "~/Notes/Inbox.org" "Web")
 														 "** [[%:link][%:description]]\nCaptured On: %U\n\n#+begin_quote\n%i\n#+end_quote\n\n\n%?")
 														)
 
@@ -460,14 +460,14 @@
 
 		;; org-contacts
 		org-enable-org-contacts-support t
-		org-contacts-directory "~/Documents/Org/People/"
+		org-contacts-directory "~/Notes/People/"
 
 		;; org-roam
 		org-enable-roam-support t
 		org-enable-roam-protocol t
 		org-roam-v2-ack t
 		org-roam-complete-everywhere t
-		org-roam-directory "~/Documents/Org/"
+		org-roam-directory "~/Notes/"
 		org-enable-roam-ui t
 
 		org-roam-capture-templates '(
@@ -552,10 +552,10 @@
 		org-deadline-warning-days 28
 		org-agenda-span 10  ;; 10 days
 		org-agenda-files '(
-											 ;; "~/Documents/Org/Inbox.org"
-											 "~/Documents/Org/Actionable.org"
-											 "~/Documents/Org/Projects.org"
-											 "~/Documents/Org/Projects/"
+											 ;; "~/Notes/Inbox.org"
+											 "~/Notes/Actionable.org"
+											 "~/Notes/Projects.org"
+											 "~/Notes/Projects/"
 											 )
 		org-agenda-time-grid '(
 													 (weekly today require-timed)

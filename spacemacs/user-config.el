@@ -127,7 +127,7 @@
  projectile-project-search-path '(
 																	"~/Projects/"
 																	("~/Code/". 3)
-																	("~/Documents/Org/" . 0)
+																	("~/Notes/" . 0)
 
 																	("~/.config/home-manager/" . 0)
 																	("~/.config/emacs/spacemacs-dev/distro/private/envrc/" . 0)
