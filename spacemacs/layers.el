@@ -965,6 +965,7 @@
 	 olivetti
 
 	 gptel
+	 gptel-magit
 	 mcp
 
 	 openwith
@@ -997,8 +998,6 @@
 		:location (recipe
 							 :fetcher git
 							 :url "https://git.savannah.gnu.org/git/emms.git"))
-
-	 gptel-magit
 	 magit-annex
 	 magit-stats
 	 helm-rg
