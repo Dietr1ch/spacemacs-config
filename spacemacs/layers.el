@@ -386,7 +386,7 @@
 		)
 	 (c-c++ ;; https://www.spacemacs.org/layers/+lang/c-c++/README.html
 		:variables
-		c-c++-backend 'eglot
+		c-c++-backend 'lsp-clangd
 		c-c++-enable-clang-format-on-save t
 		)
 	 (rust  ;; https://www.spacemacs.org/layers/+lang/rust/README.html
