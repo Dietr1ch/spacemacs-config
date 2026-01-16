@@ -38,8 +38,11 @@
 																	"/.venv"
 																	".mypy_cache"
 																	"__pycache__"
-																	;; Node
+
+																	;; Default
 																	"/node_modules"
+																	"/.venv"
+																	"/.cask"
 																	)
 		)
 	 (auto-completion ;; https://www.spacemacs.org/layers/+completion/auto-completion/README.html
