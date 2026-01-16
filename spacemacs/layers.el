@@ -329,6 +329,12 @@
 		lsp-html-format-enable t
 		lsp-html-format-end-with-newline t
 		lsp-html-format-indent-inner-html t
+		;; CSS (https://emacs-lsp.github.io/lsp-mode/page/lsp-css/)
+		lsp-css-lint-box-model "warning"
+		lsp-css-lint-compatible-vendor-prefixes "warning"
+		lsp-css-lint-important "warning"
+		lsp-css-lint-universal-selector "warning"
+		lsp-css-validate t
 
 		;; Nix
 		;; lsp-nix-nixd-server-path "nixd"
@@ -403,6 +409,7 @@
 	 (javascript ;; https://www.spacemacs.org/layers/+lang/javascript/README.html
 		:variables
 		javascript-backend 'lsp
+		javascript-fmt-tool 'prettier
 		javascript-fmt-on-save t
 		js2-mode-show-strict-warnings t
 		js2-mode-show-parse-errors t)
