@@ -924,6 +924,9 @@
 		:variables
 		)
 
+	 (just ;; ~/.config/emacs/spacemacs-dev/distro/private/just/README.org
+		:variables
+		)
 	 (shell
 		:variables
 		shell-default-shell 'eshell
