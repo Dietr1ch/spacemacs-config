@@ -73,6 +73,15 @@
 	)  ;; spacemacs/set-leader-keys
 
 
+(defun org-roam-node-filter/tag (node tag)
+	(member tag (org-roam-node-tags node))
+	)  ;; defun org-roam-node-filter/tag (node tag)
+(defun org-roam-node-find/by-tag ()
+	(interactive)
+	(let ((tag (read-string "Enter tag: ")))
+		(org-roam-node-find nil nil (lambda (node) (org-roam-node-filter/tag node tag))))
+	)  ;; defun org-roam-node-find/default ()
+
 (defun org-roam-node-filter/mtg (node)
 	(let ((tags (org-roam-node-tags node)))
 		(or
@@ -112,6 +121,7 @@
 	"<DEL> r F F" 'org-roam-node-find
 	"<DEL> r F m" 'org-roam-node-find/mtg
 	"<DEL> r F t" 'org-roam-node-find/time
+	"<DEL> r F T" 'org-roam-node-find/tag
 	"<DEL> r i"   'org-roam-node-insert
 
 	"<DEL> r s"   'org-roam-db-sync

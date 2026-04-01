@@ -10,10 +10,10 @@
 
 	 (helm  ;; https://www.spacemacs.org/layers/+completion/helm/README.html
 		:variables
-		helm-ag-base-command "rg --vimgrep --no-heading --smart-case"
+		helm-ag-base-command "rg --no-heading --smart-case"
 		helm-ag-use-grep-ignore-list nil
 		helm-position 'bottom
-		helm-rg-input-min-search-chars 2
+		helm-rg-input-min-search-chars 3
 		helm-default-external-file-browser "dolphin"
 
 		spacemacs-helm-rg-max-column-number 1024
@@ -132,7 +132,7 @@
 		llm-client-enable-gptel t
 		gptel-default-mode 'org-mode
 		;; gptel-temperature 1.0
-		gptel-model 'deepseek-r1:latest
+		gptel-model 'qwen2.5-coder:7b
 
 		llm-client-enable-ellama t
 		ellama-sessions-directory "~/Temp/AI/ellama/sessions/"
@@ -152,7 +152,7 @@
 
 	 (elfeed :variables
 					 elfeed-search-filter "@1-week-ago +unread"
-					 rmh-elfeed-org-files (list "~/Notes/Feeds.org"))
+					 rmh-elfeed-org-files (list "~/Notes/Personal/Feeds.org"))
 
 	 ;; Source control  https://www.spacemacs.org/layers/LAYERS.html#source-control
 	 (git  ;; https://www.spacemacs.org/layers/+source-control/git/README.html
@@ -405,7 +405,9 @@
 	 (python ;; https://www.spacemacs.org/layers/+lang/python/README.html
 		:variables
 		python-backend 'lsp
-		python-format-on-save t)
+		python-format-on-save t
+		python-formatter 'ruff
+		)
 	 (javascript ;; https://www.spacemacs.org/layers/+lang/javascript/README.html
 		:variables
 		javascript-backend 'lsp
@@ -570,10 +572,11 @@
 		org-deadline-warning-days 28
 		org-agenda-span 10  ;; 10 days
 		org-agenda-files '(
-											 ;; "~/Notes/Inbox.org"
+											 "~/Notes/Inbox.org"
 											 "~/Notes/Actionable.org"
+											 "~/Notes/Tickler.org"
+
 											 "~/Notes/Projects.org"
-											 "~/Notes/Projects/"
 											 )
 		org-agenda-time-grid '(
 													 (weekly today require-timed)
@@ -903,7 +906,6 @@
 		)
 	 (latex ;; https://www.spacemacs.org/layers/+lang/latex/README.html
 		:variables
-		latex-backend 'lsp
 		latex-refresh-preview t
 		)
 	 (pdf ;; https://www.spacemacs.org/layers/+readers/pdf/README.html
@@ -927,12 +929,10 @@
 	 (unicode-fonts ;;  https://www.spacemacs.org/layers/+fonts/unicode-fonts/README.html
 		:variables
 		unicode-fonts-enable-ligatures t)
-	 (emoji  ;; https://www.spacemacs.org/layers/+fun/emoji/README.html
-		:variables
-		)
 
 	 (just ;; ~/.config/emacs/spacemacs-dev/distro/private/just/README.org
 		:variables
+		justl-per-recipe-buffer t
 		)
 	 (shell
 		:variables
@@ -1006,6 +1006,7 @@
 	 ob-rust
 	 ob-nix
 	 ob-http
+	 ob-duckdb
 	 org-alert
 	 (org-roam-ui
 		:location (recipe

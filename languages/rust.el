@@ -76,6 +76,7 @@
                                            ("#[inline(never)]"      . ?🐌)  ;; SNAIL
                                            ("#[cold]"               . ?⛇)  ;; BLACK SNOWMAN
                                            ("#[tailcall::tailcall]" . ?➿)  ;; DOUBLE CURLY LOOP
+                                           ("#[tracing::instrument]" . ?⌛)  ;; HOURGLASS
 
                                            ("test"  . ?🧪)  ;; TEST TUBE
                                            ("#[test]"  . ?🔬)  ;; MICROSCOPE
