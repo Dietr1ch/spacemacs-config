@@ -251,15 +251,19 @@
 						)
 	)
 (setq
+ gptel-model 'qwen2.5-coder:7b
  gptel-backend (gptel-make-ollama "Ollama"
 								 :host "localhost:11434"
 								 :stream t
 								 :models '(
 													 ;; Models from `ollama list'
-													 deepseek-r1:latest
-													 gemma3:latest
-													 phi4:latest
-													 qwq:latest
+													 qwen2.5-coder:3b
+													 qwen2.5-coder:7b
+													 qwen2.5-coder:14b
+													 qwen3-coder:30b
+													 qwen3.5:9b
+													 llama3.1:8b
+													 phi4:14b
 													 )
 								 )
  )
