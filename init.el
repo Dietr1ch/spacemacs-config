@@ -15,7 +15,7 @@
 ;;   ./languages/nix.el
 ;;   ./languages/mzn.el
 ;; ~/.cache/emacs/customise.el
-;; ~/.cache/spacemacs-dev/customise.el
+;; ~/.cache/spacemacs/customise.el
 
 (defun dotspacemacs/layers ()
 	"Layer configuration:
@@ -91,7 +91,7 @@ It should only modify the values of Spacemacs settings."
 	;; spacemacs settings.
 	(setq-default
 
-	 spacemacs-cache-directory "~/.cache/spacemacs-dev/"
+	 spacemacs-cache-directory "~/.cache/spacemacs/"
 
 	 ;; Maximum allowed time in seconds to contact an ELPA repository.
 	 ;; (default 5)

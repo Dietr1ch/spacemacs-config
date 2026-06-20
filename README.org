@@ -18,14 +18,19 @@ git clone \
 
 Configure,
 #+begin_src fish
-echo -n '
-(
- ("spacemacs-dev" . ((user-emacs-directory . "~/.config/emacs/spacemacs-dev/distro")
-                         (env . (("SPACEMACSDIR" . "~/.config/emacs/spacemacs-dev/config")))))
- )
-' >~/.emacs-profiles.el
+  echo -n '
+  (
+   ;; Spacemacs @develop
+   ("spacemacs" . (
+                   (user-emacs-directory . "~/.config/spacemacs/distro")
+                   (env . (
+                           ("SPACEMACSDIR" . "~/.config/spacemacs/config")
+                           ))
+                   ))
+   )
+  ' >~/.emacs-profiles.el
 
-echo spacemacs-dev >~/.emacs-profile
+  echo spacemacs >~/.emacs-profile
 #+end_src
 
 ** ~spacemacs~
@@ -37,7 +42,7 @@ git clone \
     --single-branch \
     --depth 10 \
     https://github.com/syl20bnr/spacemacs \
-    ~/.config/emacs/spacemacs-dev/distro
+    ~/.config/spacemacs/distro
 #+end_src
 
 *** Configuration
@@ -46,12 +51,12 @@ git clone \
       --origin 'gh' \
       --single-branch \
       https://github.com/Dietr1ch/spacemacs-config \
-      ~/.config/emacs/spacemacs-dev/config
+      ~/.config/spacemacs/config
 
   echo "Cloning spacemacs private layers"
   git clone \
       --origin 'gh' \
       --branch 'master '\
       https://github.com/Dietr1ch/spacemacs-layer-envrc \
-      ~/.config/emacs/spacemacs-dev/distro/private/envrc
+      ~/.config/spacemacs/distro/private/envrc
 #+end_src

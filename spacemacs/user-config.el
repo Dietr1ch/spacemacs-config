@@ -31,7 +31,7 @@
 
 ;; https://systemcrafters.net/emacs-from-scratch/the-best-default-settings/
 ;; Move customizations to a dedicated file
-;; ~/.cache/spacemacs-dev/customise.el
+;; ~/.cache/spacemacs/customise.el
 (setq custom-file (concat spacemacs-cache-directory "customise.el"))
 (load custom-file 'noerror 'nomessage)
 (setq use-dialog-box nil)
@@ -130,8 +130,8 @@
 																	("~/Notes/" . 0)
 
 																	("~/.config/home-manager/" . 0)
-																	("~/.config/emacs/spacemacs-dev/distro/private/envrc/" . 0)
 																	("~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/cs2/cfg/" . 0)
+																	("~/.config/spacemacs/distro/private/" . 1)
 																	;; ("/sudo::/etc/nixos/" . 0)
 																	)
  magit-repository-directories '(
@@ -139,8 +139,8 @@
 																("~/Code/". 3)
 
 																("~/.config/home-manager/" . 0)
-																("~/.config/emacs/spacemacs-dev/distro/private/envrc/" . 0)
 																("~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/cs2/cfg/" . 0)
+																("~/.config/spacemacs/distro/private/" . 1)
 																)
  )
 

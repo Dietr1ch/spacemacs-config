@@ -164,7 +164,7 @@
 		magit-revision-show-gravatars nil
 		)
 
-	 (envrc ;; ~/.config/emacs/spacemacs-dev/distro/private/envrc/README.org
+	 (envrc ;; ~/.config/spacemacs/distro/private/envrc/README.org
 		)
 	 (systemd ;; https://www.spacemacs.org/layers/+tools/systemd/README.html
 		)
@@ -930,7 +930,7 @@
 		:variables
 		unicode-fonts-enable-ligatures t)
 
-	 (just ;; ~/.config/emacs/spacemacs-dev/distro/private/just/README.org
+	 (just ;; ~/.config/spacemacs/distro/private/just/README.org
 		:variables
 		justl-per-recipe-buffer t
 		)

@@ -16,7 +16,7 @@
 	:body
 	(treemacs-do-switch-workspace "Emacs")
 
-	(find-file "~/.config/emacs/spacemacs-dev/config/init.el")
+	(find-file "~/.config/spacemacs/config/init.el")
 	)
 
 (spacemacs|define-custom-layout "Nix"
