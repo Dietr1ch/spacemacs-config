@@ -241,6 +241,9 @@
 ;; (setf (alist-get 'org-mode gptel-response-prefix-alist) "@assistant\n")
 
 
+(gptel-make-deepseek "DeepSeek"
+	:stream t
+	)
 (gptel-make-anthropic "Claude"
 	:stream t
 	)
