@@ -35,5 +35,5 @@
 	:body
 	(treemacs-do-switch-workspace "Projects")
 
-	(dired "~/Projects/")
+	(helm-projectile-switch-project)
 	)
