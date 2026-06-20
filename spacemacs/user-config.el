@@ -130,7 +130,6 @@
 																	("~/Notes/" . 0)
 
 																	("~/.config/home-manager/" . 0)
-																	("~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/cs2/cfg/" . 0)
 																	("~/.config/spacemacs/distro/private/" . 1)
 																	;; ("/sudo::/etc/nixos/" . 0)
 																	)
@@ -139,7 +138,6 @@
 																("~/Code/". 3)
 
 																("~/.config/home-manager/" . 0)
-																("~/.local/share/Steam/steamapps/common/Counter-Strike Global Offensive/cs2/cfg/" . 0)
 																("~/.config/spacemacs/distro/private/" . 1)
 																)
  )
