@@ -610,6 +610,7 @@ before packages are loaded."
 	(message "Done loading user-config.el")
 
 	(message "Refreshing recent files...")
+	(require 'recentf)
 	(recentf-cleanup)
 	(message "Refreshing recent known projects...")
 	(projectile-cleanup-known-projects)
