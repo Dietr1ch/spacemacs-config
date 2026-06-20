@@ -319,6 +319,8 @@
 (load-file (concat dotspacemacs-directory "languages/python.el"))   ;; ../languages/python.el
 (load-file (concat dotspacemacs-directory "languages/haskell.el"))  ;; ../languages/haskell.el
 
+(load-file (concat dotspacemacs-directory "languages/web.el"))      ;; ../languages/web.el
+
 (load-file (concat dotspacemacs-directory "languages/nix.el"))      ;; ../languages/nix.el
 (load-file (concat dotspacemacs-directory "languages/mzn.el"))      ;; ../languages/mzn.el
 (with-eval-after-load 'org
