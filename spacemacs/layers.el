@@ -402,6 +402,9 @@
 		rustic-cargo-test-runner 'nextest ;; 'cargo
 		rustic-default-clippy-arguments "--all-targets --all-features"
 		)
+	 (go ;; https://www.spacemacs.org/layers/+lang/go/README.html
+		go-backend 'lsp
+		)
 	 (python ;; https://www.spacemacs.org/layers/+lang/python/README.html
 		:variables
 		python-backend 'lsp
