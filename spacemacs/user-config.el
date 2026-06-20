@@ -196,6 +196,7 @@
 	"<DEL> W" 'whitespace-cleanup
 	"<DEL> d" 'envrc-reload
 	"<DEL> D" 'envrc-reload-all
+	"<DEL> h" 'eldoc-doc-buffer
 	)
 
 (spacemacs/set-leader-keys
