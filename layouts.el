@@ -37,3 +37,13 @@
 
 	(helm-projectile-switch-project)
 	)
+
+(spacemacs|define-custom-layout "Blog"
+	:binding "b"
+	:body
+	(treemacs-do-switch-workspace "Blog")
+
+	(find-file "~/Notes/Personal/Blog/TODOs.org")
+	(split-window-right-and-focus)
+	(find-file "~/Notes/Personal/Blog/index.html")
+	)
