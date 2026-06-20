@@ -57,6 +57,11 @@ git clone \
   git clone \
       --origin 'gh' \
       --branch 'master '\
+      https://github.com/Dietr1ch/spacemacs-layer-ai \
+      ~/.config/spacemacs/distro/private/ai
+  git clone \
+      --origin 'gh' \
+      --branch 'master '\
       https://github.com/Dietr1ch/spacemacs-layer-envrc \
       ~/.config/spacemacs/distro/private/envrc
 #+end_src

@@ -137,7 +137,7 @@
 		llm-client-enable-ellama t
 		ellama-sessions-directory "~/Temp/AI/ellama/sessions/"
 		)
-	 (minuet ;; ~/.config/emacs/spacemacs-dev/distro/private/minuet/README.org
+	 (ai ;; ~/.config/spacemacs/distro/private/ai/README.org
 		:variables
 		minuet-provider 'openai-fim-compatible
 		minuet-end-point "http://localhost:11434/v1/completions"
