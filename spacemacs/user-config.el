@@ -312,6 +312,7 @@
 (load-file (concat dotspacemacs-directory "languages/haskell.el"))  ;; ../languages/haskell.el
 
 (load-file (concat dotspacemacs-directory "languages/nix.el"))      ;; ../languages/nix.el
+(load-file (concat dotspacemacs-directory "languages/mzn.el"))      ;; ../languages/mzn.el
 (with-eval-after-load 'org
 	;; https://www.spacemacs.org/layers/+emacs/org/README.html#important-note
 	(load-file (concat dotspacemacs-directory "languages/org.el"))      ;; ../languages/org.el

@@ -1041,6 +1041,7 @@
 	 janet-mode
 	 just-mode
 	 just-ts-mode
+	 minizinc-ts-mode
 
 	 qrencode
 

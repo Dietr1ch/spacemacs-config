@@ -13,6 +13,7 @@
 ;;   ./languages/rust.el
 ;;   ./languages/org.el
 ;;   ./languages/nix.el
+;;   ./languages/mzn.el
 ;; ~/.cache/emacs/customise.el
 ;; ~/.cache/spacemacs-dev/customise.el
 
