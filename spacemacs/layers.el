@@ -171,6 +171,7 @@
 	 (nixos ;; https://www.spacemacs.org/layers/+os/nixos/README.html
 		:variables
 		nix-backend 'lsp
+		nix-nixfmt-args '("--strict" "-")
 		nixos-format-on-save t)
 
 	 (lsp ;; https://www.spacemacs.org/layers/+tools/lsp/README.html
