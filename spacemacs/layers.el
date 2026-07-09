@@ -875,11 +875,13 @@
 															 (js . t)
 
 															 (dot . t)
+															 (mermaid . t)
 															 (ditaa . t)
 															 (latex . t)
 															 )
 		)
 	 outshine ;; https://www.spacemacs.org/layers/+emacs/outshine/README.html
+	 mermaid ;; https://github.com/arnm/mermaid-layer
 
 	 (nginx  ;; https://www.spacemacs.org/layers/+tools/nginx/README.html
 		:variables
@@ -1010,6 +1012,7 @@
 	 ob-nix
 	 ob-http
 	 ob-duckdb
+	 ob-mermaid
 	 org-alert
 	 (org-roam-ui
 		:location (recipe
