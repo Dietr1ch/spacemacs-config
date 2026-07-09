@@ -478,6 +478,9 @@
 		org-export-coding-system 'utf-8
 		org-enable-transclusion-support t
 
+		;; Mermaid
+		ob-mermaid-default-config-file "~/.config/spacemacs/config/tools/mermaid.json"
+
 		;; Notifications
 		org-enable-notifications nil  ;; BROKEN!
 		org-start-notification-daemon-on-startup t
