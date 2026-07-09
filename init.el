@@ -227,7 +227,6 @@ It should only modify the values of Spacemacs settings."
 												 ;; spacemacs-light
 
 												 doom-material
-												 ;; doom-nord-aurora
 												 doom-sourcerer
 												 doom-tokyo-night
 												 doom-tomorrow-night
