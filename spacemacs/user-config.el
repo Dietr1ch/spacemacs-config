@@ -78,8 +78,6 @@
  )
 
 ;; Fix
-;;(setq projectile-project-search-path (cddr (directory-files "~/Projects" t)))
-;;(projectile-discover-projects-in-search-path)
 (setq
  projectile-globally-ignored-directories '(
 																					 ;; Defaults
@@ -130,7 +128,6 @@
 																	("~/Notes/" . 0)
 
 																	("~/.config/home-manager/" . 0)
-																	("~/.config/spacemacs/distro/private/" . 1)
 																	;; ("/sudo::/etc/nixos/" . 0)
 																	)
  magit-repository-directories '(
