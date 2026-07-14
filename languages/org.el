@@ -106,6 +106,19 @@
 	(org-roam-node-find t nil 'org-roam-node-filter/mtg)
 	)  ;; defun org-roam-node-find/mtg ()
 
+;; Filter/Find Transcripts
+(defun org-roam-node-filter/transcripts (node)
+	(let ((tags (org-roam-node-tags node)))
+		(or
+		 ;; agent-shell transcripts
+		 (member "agent-shell" tags)
+		 ))
+	)  ;; defun org-roam-node-filter/transcripts (node)
+(defun org-roam-node-find/transcripts ()
+	(interactive)
+	(org-roam-node-find t nil 'org-roam-node-filter/transcripts)
+	)  ;; defun org-roam-node-find/transcripts ()
+
 ;; Filter/Find Default
 (defun org-roam-node-filter/default (node)
 	(let ((tags (org-roam-node-tags node)))
@@ -115,6 +128,8 @@
 			(member "Time" tags)
 			(member "MtG-Card" tags)
 			(member "MtG-Meta" tags)
+			;; agent-shell transcripts
+			(member "agent-shell" tags)
 			)))
 	)  ;; defun org-roam-node-filter/default (node)
 (defun org-roam-node-find/default ()
@@ -133,7 +148,8 @@
 	"<DEL> r f"   'org-roam-node-find/default
 	"<DEL> r F F" 'org-roam-node-find
 	"<DEL> r F m" 'org-roam-node-find/mtg
-	"<DEL> r F T" 'org-roam-node-find/tag
+	"<DEL> r F t" 'org-roam-node-find/tag
+	"<DEL> r F T" 'org-roam-node-find/transcripts
 	"<DEL> r i"   'org-roam-node-insert
 
 	"<DEL> r s"   'org-roam-db-sync
