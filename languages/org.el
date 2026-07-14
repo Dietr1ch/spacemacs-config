@@ -83,6 +83,7 @@
 	)  ;; spacemacs/set-leader-keys
 
 
+;; Filter/Find by Tag
 (defun org-roam-node-filter/tag (node tag)
 	(member tag (org-roam-node-tags node))
 	)  ;; defun org-roam-node-filter/tag (node tag)
@@ -92,6 +93,7 @@
 		(org-roam-node-find nil nil (lambda (node) (org-roam-node-filter/tag node tag))))
 	)  ;; defun org-roam-node-find/default ()
 
+;; Filter/Find MtG
 (defun org-roam-node-filter/mtg (node)
 	(let ((tags (org-roam-node-tags node)))
 		(or
@@ -104,16 +106,17 @@
 	(org-roam-node-find t nil 'org-roam-node-filter/mtg)
 	)  ;; defun org-roam-node-find/mtg ()
 
+;; Filter/Find Default
 (defun org-roam-node-filter/default (node)
 	(let ((tags (org-roam-node-tags node)))
 		(not
 		 (or
+			;; MtG
 			(member "Time" tags)
 			(member "MtG-Card" tags)
 			(member "MtG-Meta" tags)
 			)))
 	)  ;; defun org-roam-node-filter/default (node)
-
 (defun org-roam-node-find/default ()
 	(interactive)
 	(org-roam-node-find t nil 'org-roam-node-filter/default)
@@ -130,7 +133,6 @@
 	"<DEL> r f"   'org-roam-node-find/default
 	"<DEL> r F F" 'org-roam-node-find
 	"<DEL> r F m" 'org-roam-node-find/mtg
-	"<DEL> r F t" 'org-roam-node-find/time
 	"<DEL> r F T" 'org-roam-node-find/tag
 	"<DEL> r i"   'org-roam-node-insert
 
