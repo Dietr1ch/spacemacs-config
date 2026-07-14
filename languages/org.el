@@ -65,11 +65,21 @@
 	(interactive)
 	(find-file-other-window "~/Notes/Wishlist.org")
 	)  ;; defun gtd/wishlist ()
+(defun gtd/routine ()
+	(interactive)
+	(find-file-other-window "~/Notes/Routine.org")
+	)  ;; defun gtd/routine ()
+(defun gtd/reading ()
+	(interactive)
+	(find-file-other-window "~/Notes/Reading.org")
+	)  ;; defun gtd/reading ()
 (spacemacs/set-leader-keys
 	"<DEL> g i" 'gtd/inbox
 	"<DEL> g a" 'gtd/actionable
 	"<DEL> g t" 'gtd/tickler
 	"<DEL> g w" 'gtd/wishlist
+	"<DEL> g r" 'gtd/routine
+	"<DEL> g b" 'gtd/reading
 	)  ;; spacemacs/set-leader-keys
 
 

@@ -439,7 +439,14 @@
 	 (org ;; https://www.spacemacs.org/layers/+emacs/org/README.html
 		:variables
 		org-directory "~/Notes/"
+
+		;; GTD
 		org-default-notes-file (concat org-directory "Inbox.org")
+		org-refile-targets '(
+												 ("~/Notes/Inbox.org" :maxlevel . 1)
+												 ("~/Notes/Actionable.org" :maxlevel . 2)
+												 ("~/Notes/Tickler.org" :maxlevel . 1)
+												 )
 		org-project-capture-projects-file "TODOs.org"
 		org-capture-templates '(
 														;; https://orgmode.org/manual/Capture-templates.html
