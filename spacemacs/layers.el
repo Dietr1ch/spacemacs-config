@@ -69,8 +69,6 @@
 	 (templates ;; https://www.spacemacs.org/layers/+completion/templates/README.html
 		:variables
 		templates-private-directory "~/Projects/emacs-templates/templates"
-		;; TODO try out default templates for a while
-		;; templates-use-default-templates nil
 		)
 	 (typography ;; https://www.spacemacs.org/layers/+emacs/typography/README.html
 		:variables
