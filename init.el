@@ -14,7 +14,6 @@
 ;;   ./languages/org.el
 ;;   ./languages/nix.el
 ;;   ./languages/mzn.el
-;; ~/.cache/emacs/customise.el
 ;; ~/.cache/spacemacs/customise.el
 
 (defun dotspacemacs/layers ()
