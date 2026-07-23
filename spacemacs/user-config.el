@@ -6,6 +6,11 @@
  user-mail-address "Dietrich@Daroch.me"
  )
 
+(setq auth-sources '(
+										 "~/.authinfo.gpg"
+										 )
+			)
+
 (setq
  dired-listing-switches "-aBhl  --group-directories-first"
  )
