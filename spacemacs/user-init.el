@@ -58,7 +58,6 @@
  remote-file-name-inhibit-auto-save-visited t
 
  tramp-copy-size-limit (* 1024 1024) ;; 1 MB
- ;; tramp-verbose 2
  )
 
 (connection-local-set-profile-variables
