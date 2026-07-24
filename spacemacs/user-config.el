@@ -11,6 +11,9 @@
 										 )
 			)
 
+;; Allow editing git commits right from startup
+(require 'git-commit) (global-git-commit-mode t)
+
 (setq
  dired-listing-switches "-aBhl  --group-directories-first"
  )
