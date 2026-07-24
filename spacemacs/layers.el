@@ -143,6 +143,7 @@
 		minuet-n-completions 3
 		minuet-context-window 512
 		agent-shell-org-transcript-directory "~/Notes/Transcripts/AI/agent-shell/"
+		agent-shell-preferred-agent-config '(preselect . opencode)
 		)
 	 (dash ;; https://www.spacemacs.org/layers/+tools/dash/README.html
 		:variables
