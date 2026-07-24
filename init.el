@@ -625,6 +625,18 @@ before packages are loaded."
 	(message "Refreshing recent known projects...")
 	(projectile-cleanup-known-projects)
 	(projectile-discover-projects-in-search-path)
+
+	(message "Loading common packages...")
+	(require 'org)
+	(require 'magit)
+	(require 'company)
+	(require 'flycheck)
+	(when (daemonp)
+		(message "Loading more common packages...")
+		(require 'forge)
+		(require 'lsp-mode)
+		(require 'agent-shell)
+		)
 	)
 
 
