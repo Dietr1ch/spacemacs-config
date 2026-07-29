@@ -631,11 +631,13 @@ before packages are loaded."
 	(require 'magit)
 	(require 'company)
 	(require 'flycheck)
+	(message "Loading common packages... Done!")
 	(when (daemonp)
 		(message "Loading more common packages...")
 		(require 'forge)
 		(require 'lsp-mode)
 		(require 'agent-shell)
+		(message "Loading more common packages... Done!")
 		)
 	)
 
