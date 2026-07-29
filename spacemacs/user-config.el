@@ -139,11 +139,11 @@
 																	;; ("/sudo::/etc/nixos/" . 0)
 																	)
  magit-repository-directories '(
-																("~/Projects/". 1)
+																;; ("~/Projects/". 1)  ;; Included through symlinks
 																("~/Code/". 3)
 
 																("~/.config/home-manager/" . 0)
-																("~/.config/spacemacs/distro/private/" . 1)
+																;; ("~/.config/spacemacs/distro/private/" . 1)  ;; Included through symlinks
 																)
  )
 
