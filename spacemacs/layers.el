@@ -407,7 +407,7 @@
 
 		rustic-cargo-clippy-trigger-fix 'on-compile
 		rustic-cargo-test-runner 'nextest
-		rustic-cargo-nextest-exec-command '("nextest" "run" "--hide-progress-bar")
+		rustic-cargo-nextest-exec-command '("nextest" "run" "--hide-progress-bar" "--max-fail" "20")
 		rustic-default-clippy-arguments "--all-targets --all-features"
 		)
 	 (go ;; https://www.spacemacs.org/layers/+lang/go/README.html
