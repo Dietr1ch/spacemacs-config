@@ -400,7 +400,8 @@
 		rustic-format-trigger 'on-save  ;; 'on-compile
 
 		rustic-cargo-clippy-trigger-fix 'on-compile
-		rustic-cargo-test-runner 'nextest ;; 'cargo
+		rustic-cargo-test-runner 'nextest
+		rustic-cargo-nextest-exec-command '("nextest" "run" "--hide-progress-bar")
 		rustic-default-clippy-arguments "--all-targets --all-features"
 		)
 	 (go ;; https://www.spacemacs.org/layers/+lang/go/README.html
