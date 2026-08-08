@@ -138,6 +138,7 @@
 																	("~/.config/home-manager/" . 0)
 																	;; ("/sudo::/etc/nixos/" . 0)
 																	)
+ magit-clone-default-directory "~/Projects/"
  magit-repository-directories '(
 																;; ("~/Projects/". 1)  ;; Included through symlinks
 																("~/Code/". 3)
