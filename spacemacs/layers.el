@@ -155,6 +155,11 @@
 					 rmh-elfeed-org-files (list "~/Notes/Personal/Feeds.org"))
 
 	 ;; Source control  https://www.spacemacs.org/layers/LAYERS.html#source-control
+	 (version-control;; https://www.spacemacs.org/layers/LAYERS.html#version-control
+		:variables
+		version-control-diff-side 'right
+		version-control-margin 'global
+		)
 	 (git  ;; https://www.spacemacs.org/layers/+source-control/git/README.html
 		:variables
 		git-enable-magit-delta-plugin t
