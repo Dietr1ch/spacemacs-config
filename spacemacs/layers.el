@@ -162,6 +162,7 @@
 		)
 	 (git  ;; https://www.spacemacs.org/layers/+source-control/git/README.html
 		:variables
+		;; Plugins: https://www.spacemacs.org/layers/+source-control/git/README.html#magit-plugins
 		git-enable-magit-delta-plugin t
 		git-enable-magit-gitflow-plugin t
 		git-enable-magit-todos-plugin t
