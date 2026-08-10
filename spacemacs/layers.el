@@ -357,6 +357,8 @@
 		;; -----------------
 		lsp-rust-analyzer-cargo-auto-reload t
 		lsp-rust-analyzer-cargo-run-build-scripts t
+		;; NOTE: We'd rather waste disk space than have that many cache-invalidations due to different flags
+		lsp-rust-analyzer-cargo-target-dir "target/rust-analyzer"
 		lsp-rust-analyzer-cargo-watch-command "clippy"  ;; Instead of "check"
 		lsp-rust-analyzer-cargo-watch-enable t
 		lsp-rust-analyzer-check-all-targets t
@@ -408,6 +410,7 @@
 		rustic-cargo-clippy-trigger-fix 'on-compile
 		rustic-cargo-test-runner 'nextest
 		rustic-cargo-nextest-exec-command '("nextest" "run" "--hide-progress-bar" "--max-fail" "20")
+		;; QUESTION: Is this making things worse?
 		rustic-default-clippy-arguments "--all-targets --all-features"
 		)
 	 (go ;; https://www.spacemacs.org/layers/+lang/go/README.html
