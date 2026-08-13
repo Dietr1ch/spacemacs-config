@@ -310,13 +310,19 @@
 																	 "[/\\\\][^/\\\\]+~\\'"
 																	 )
 		lsp-file-watch-ignored-directories '(
+																				 ;; VCS
+																				 ;; Git
 																				 "[/\\\\]\\.git\\'"
+																				 "[/\\\\]wts\\'"
+																				 ;; Git forges
 																				 "[/\\\\]\\.github\\'"
 																				 "[/\\\\]\\.gitlab\\'"
+																				 ;; Mercurial
 																				 "[/\\\\]\\.hg\\'"
 
 																				 "[/\\\\]\\.cache\\'"
 
+																				 ;; Env
 																				 "[/\\\\]\\.direnv\\'"
 																				 "[/\\\\]\\.devenv\\'"
 																				 "[/\\\\]\\.devenv\\.*\\'"
@@ -329,6 +335,8 @@
 																				 "[/\\\\]\\.pytest_cache\\'"
 																				 "[/\\\\]__pycache__\\'"
 																				 "[/\\\\]site-packages\\'"
+																				 ;; JS
+																				 "[/\\\\]node_modules"
 																				 )
 
 		;; Web
