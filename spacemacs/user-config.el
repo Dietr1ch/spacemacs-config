@@ -131,8 +131,10 @@
 																						 ".lock"
 																						 )
  projectile-project-search-path '(
-																	"~/Projects/"
-																	("~/Code/". 3)
+																	;; ("~/Projects/". 1) ;; ~/Projects/BRANCH  ;; Included through ~/Code/github/Dietr1ch/REPO
+																	("~/Code/". 3) ;; ~/Code/FORGE/USER/REPO
+																	("~/Worktrees/". 2) ;; ~/Worktrees/REPO/BRANCH
+
 																	("~/Notes/" . 0)
 
 																	("~/.config/home-manager/" . 0)
@@ -140,11 +142,12 @@
 																	)
  magit-clone-default-directory "~/Projects/"
  magit-repository-directories '(
-																;; ("~/Projects/". 1)  ;; Included through symlinks
-																("~/Code/". 3)
+																;; ("~/Projects/". 1) ;; ~/Projects/BRANCH  ;; Included through ~/Code/github/Dietr1ch/REPO
+																("~/Code/". 3) ;; ~/Code/FORGE/USER/REPO
+																("~/Worktrees/". 2) ;; ~/Worktrees/REPO/BRANCH
 
 																("~/.config/home-manager/" . 0)
-																;; ("~/.config/spacemacs/distro/private/" . 1)  ;; Included through symlinks
+																;; ("~/.config/spacemacs/distro/private/" . 1)  ;; Included through symlinks from ~/Projects/spacemacs-layer-LAYER/
 																)
  )
 
