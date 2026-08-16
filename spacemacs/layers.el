@@ -142,6 +142,7 @@
 		minuet-model "qwen2.5-coder:3b"
 		minuet-n-completions 3
 		minuet-context-window 512
+		agent-shell-header-style 'text
 		agent-shell-org-transcript-directory "~/Notes/Transcripts/AI/agent-shell/"
 		agent-shell-preferred-agent-config '(preselect . opencode)
 		)
