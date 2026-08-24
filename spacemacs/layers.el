@@ -414,6 +414,10 @@
 		;; QUESTION: Is this making things worse?
 		rustic-default-clippy-arguments "--all-targets --all-features"
 		)
+	 (zig  ;; https://www.spacemacs.org/layers/+lang/zig/README.html
+		:variables
+		zls-backend 'lsp
+		)
 	 (go ;; https://www.spacemacs.org/layers/+lang/go/README.html
 		go-backend 'lsp
 		)
