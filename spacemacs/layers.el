@@ -966,7 +966,7 @@
 		:variables
 		unicode-fonts-enable-ligatures t)
 
-	 (just ;; ~/.config/spacemacs/distro/private/just/README.org
+	 (just
 		:variables
 		justl-per-recipe-buffer t
 		)
