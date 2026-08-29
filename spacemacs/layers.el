@@ -941,9 +941,9 @@
 		)
 	 (json ;; https://www.spacemacs.org/layers/+lang/json/README.html
 		:variables
+		json-backend 'lsp
 		json-fmt-on-save t
 		json-fmt-tool 'prettier
-		json-backend 'lsp
 		)
 	 (jsonnet ;; https://www.spacemacs.org/layers/+lang/jsonnet/README.html
 		:variables
@@ -952,15 +952,20 @@
 		:variables
 		latex-refresh-preview t
 		)
-	 (pdf ;; https://www.spacemacs.org/layers/+readers/pdf/README.html
-		:variables
-		)
 	 markdown
-	 semantic-web ;; https://www.spacemacs.org/layers/+lang/semantic-web/README.html
+	 (toml ;; https://www.spacemacs.org/layers/+lang/toml/README.html
+		:variables
+		toml-backend 'lsp
+		)
 	 (yaml ;; https://www.spacemacs.org/layers/+lang/yaml/README.html
 		:variables
 		yaml-enable-lsp t
 		)
+
+	 (pdf ;; https://www.spacemacs.org/layers/+readers/pdf/README.html
+		:variables
+		)
+	 semantic-web ;; https://www.spacemacs.org/layers/+lang/semantic-web/README.html
 	 copy-as-format ;; https://www.spacemacs.org/layers/+misc/copy-as-format/README.html
 
 	 (colors  ;; https://www.spacemacs.org/layers/+themes/colors/README.html
