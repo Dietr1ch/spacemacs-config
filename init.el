@@ -631,6 +631,7 @@ before packages are loaded."
 	(require 'magit)
 	(require 'company)
 	(require 'flycheck)
+	(require 'ranger)
 	(message "Loading common packages... Done!")
 	(when (daemonp)
 		(message "Loading more common packages...")
