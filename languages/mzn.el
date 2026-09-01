@@ -1,4 +1,4 @@
-;; MiniZinc
+;; MiniZinc  -*- lexical-binding: t; -*-
 
 (add-hook 'minizinc-ts-mode-hook
           (lambda ()

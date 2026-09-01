@@ -1,4 +1,4 @@
-;; Org
+;; Org  -*- lexical-binding: t; -*-
 
 ;; (cl-defmethod org-roam-node-hierarchy ((node org-roam-node))
 ;;	(let ((level (org-roam-node-level node)))

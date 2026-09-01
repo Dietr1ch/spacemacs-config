@@ -1,4 +1,4 @@
-;; Web
+;; Web  -*- lexical-binding: t; -*-
 
 
 (with-eval-after-load 'css-mode

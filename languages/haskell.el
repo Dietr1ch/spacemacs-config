@@ -1,4 +1,4 @@
-;; Haskell
+;; Haskell  -*- lexical-binding: t; -*-
 
 (add-hook 'haskell-mode-hook
           (lambda ()

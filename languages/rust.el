@@ -1,4 +1,4 @@
-;; Rust
+;; Rust  -*- lexical-binding: t; -*-
 
 (add-hook 'rust-mode-hook
           (lambda ()

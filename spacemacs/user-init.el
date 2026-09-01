@@ -1,4 +1,4 @@
-;; dotspacemacs/user-init ()
+;; dotspacemacs/user-init ()  -*- lexical-binding: t; -*-
 
 (setq
  display-time-24hr-format t

@@ -1,4 +1,4 @@
-;; Python
+;; Python  -*- lexical-binding: t; -*-
 
 ;; Prettify symbols - Python
 (add-hook 'python-mode-hook

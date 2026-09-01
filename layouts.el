@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 (spacemacs|define-custom-layout "Org"
 	:binding "o"
 	:body

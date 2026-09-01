@@ -1,4 +1,4 @@
-;; dotspacemacs/user-config ()
+;; dotspacemacs/user-config ()  -*- lexical-binding: t; -*-
 
 (setq max-lisp-eval-depth 10000)
 

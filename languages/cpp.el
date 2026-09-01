@@ -1,4 +1,4 @@
-;; C++
+;; C++  -*- lexical-binding: t; -*-
 
 (add-hook 'c++-mode-hook
           (lambda ()
