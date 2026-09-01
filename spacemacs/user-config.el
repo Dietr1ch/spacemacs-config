@@ -50,6 +50,9 @@
 
 (setq spacemacs-keep-legacy-current-buffer-delete-bindings nil)
 
+(setq
+ envrc-async 2 ;; Block for up to 2s
+ )
 (envrc-global-mode)
 
 (setq-default
