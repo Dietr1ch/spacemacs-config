@@ -1,13 +1,5 @@
 ;; Org  -*- lexical-binding: t; -*-
 
-;; (cl-defmethod org-roam-node-hierarchy ((node org-roam-node))
-;;	(let ((level (org-roam-node-level node)))
-;;		(concat
-;;		 (when (> level 0) (concat (org-roam-node-file-title node) " > "))
-;;		 (when (> level 1) (concat (string-join (org-roam-node-olp node) " > ") " > "))
-;;		 (org-roam-node-title node))))
-;; (setq org-roam-node-display-template "${hierarchy:*} ${tags:30}")
-
 ;; GPTel
 (setf (alist-get 'org-mode gptel-prompt-prefix-alist) "@user\n")
 (setf (alist-get 'org-mode gptel-response-prefix-alist) "@assistant\n")
@@ -26,6 +18,16 @@
 																					 ;; ("-+-" . "┼")  ;; BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL
 																					 )))
 					)  ;; add-hook 'org-mode-hook
+(with-eval-after-load 'org-roam
+	;; Org-roam - Custom display template
+	(cl-defmethod org-roam-node-hierarchy ((node org-roam-node))
+		(let ((level (org-roam-node-level node)))
+			(concat
+			 (when (> level 0) (concat (org-roam-node-file-title node) " > "))
+			 (when (> level 1) (concat (string-join (org-roam-node-olp node) " > ") " > "))
+			 (org-roam-node-title node))))
+	(setq org-roam-node-display-template "${hierarchy:*} ${tags:30}")
+	)  ;; with-eval-after-load 'org-roam
 
 
 ;; org-mode - org-present
