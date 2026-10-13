@@ -288,27 +288,20 @@
 ;; ispell
 ;; ------
 
-;; (with-eval-after-load 'ispell
-;;   ;; NOTE spell-checking layer config in ./layers.el
-;;   ;;   ;; ispell-set-spellchecker-params has to be called
-;;   ;;   ;; before ispell-hunspell-add-multi-dic will work
-;;   ;;
-;;   ;;   (ispell-set-spellchecker-params)
-;;   ;;   (ispell-hunspell-add-multi-dic "en_US,es_CL,de_DE")
-;;
-;;   ;; (setenv "LANG" "en_US.UTF-8")
-;;   (ispell-set-spellchecker-params)
-;;   (ispell-hunspell-add-multi-dic "en_GB,es_CL,de_DE")
-;;   )
-
 ;; https://www.spacemacs.org/layers/+checkers/spell-checking/README.html#enabling-multi-dictionary-support-with-hunspell
 (with-eval-after-load "ispell"
-	;; NOTE: `ispell-set-spellchecker-params` has to be called before `ispell-hunspell-add-multi-dic`
-	(ispell-set-spellchecker-params)
-	(ispell-hunspell-add-multi-dic "en_GB,es_CL,de_DE")
-	(setq ispell-dictionary "en_GB,es_CL,de_DE")
-	)
+	;; Use Hunspell as the spell checker (required for multi-dict support)
+	(setq ispell-program-name "hunspell")
 
+	;; This function must be called before adding multi-dictionaries
+	(ispell-set-spellchecker-params)
+
+	;; Add the combined dictionary (order usually doesn't matter)
+	(ispell-hunspell-add-multi-dic "en_IE,de_DE,es_CL")
+
+	;; Set this combined dictionary as the default
+	(setq ispell-dictionary "en_IE,de_DE,es_CL")
+	)
 
 (with-eval-after-load 'magit-mode
 	(require 'gptel-magit)
