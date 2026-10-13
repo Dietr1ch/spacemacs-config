@@ -52,6 +52,9 @@
 
 (setq
  envrc-async 2 ;; Block for up to 2s
+
+ envrc-remote 't
+ envrc-supported-tramp-methods '("sshx" "ssh")
  )
 (envrc-global-mode)
 
