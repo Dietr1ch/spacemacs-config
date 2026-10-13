@@ -134,8 +134,7 @@
 																						 ".lock"
 																						 )
  projectile-project-search-path '(
-																	;; ("~/Projects/". 1) ;; ~/Projects/BRANCH  ;; Included through ~/Code/github/Dietr1ch/REPO
-																	("~/Code/". 3) ;; ~/Code/FORGE/USER/REPO
+																	("~/Projects/". 1) ;; ~/Projects/BRANCH
 																	("~/Worktrees/". 2) ;; ~/Worktrees/REPO/BRANCH
 
 																	("~/Notes/" . 0)
@@ -145,8 +144,7 @@
 																	)
  magit-clone-default-directory "~/Projects/"
  magit-repository-directories '(
-																;; ("~/Projects/". 1) ;; ~/Projects/BRANCH  ;; Included through ~/Code/github/Dietr1ch/REPO
-																("~/Code/". 3) ;; ~/Code/FORGE/USER/REPO
+																("~/Projects/". 1) ;; ~/Projects/BRANCH
 																("~/Worktrees/". 2) ;; ~/Worktrees/REPO/BRANCH
 
 																("~/.config/home-manager/" . 0)
