@@ -192,7 +192,7 @@ It should only modify the values of Spacemacs settings."
 	 dotspacemacs-startup-buffer-multi-digit-delay 0.4
 
 	 ;; If non-nil, show file icons for entries and headings on Spacemacs home buffer.
-	 ;; This has no effect in terminal or if "all-the-icons" package or the font
+	 ;; This has no effect in terminal or if "nerd-icons" package or the font
 	 ;; is not installed. (default nil)
 	 dotspacemacs-startup-buffer-show-icons t
 
@@ -218,7 +218,10 @@ It should only modify the values of Spacemacs settings."
 
 	 ;; List of themes, the first of the list is loaded when spacemacs starts.
 	 ;; Press `SPC T n' to cycle to the next theme in the list (works great
-	 ;; with 2 themes variants, one dark and one light)
+	 ;; with 2 themes variants, one dark and one light). A theme from external
+	 ;; package can be defined with `:package', or a theme can be defined with
+	 ;; `:location' to download the theme package, refer the themes section in
+	 ;; DOCUMENTATION.org for the full theme specifications.
 	 dotspacemacs-themes '(
 												 doom-wilmersdorf
 
@@ -255,8 +258,8 @@ It should only modify the values of Spacemacs settings."
 	 dotspacemacs-colorize-cursor-according-to-state t
 
 	 ;; Default font or prioritized list of fonts. This setting has no effect when
-	 ;; running Emacs in terminal. The font set here will be used for default and
-	 ;; fixed-pitch faces. The `:size' can be specified as
+	 ;; running Emacs in terminal. The font set here will be used for `default' and
+	 ;; `fixed-pitch' faces. The `:size' can be specified as
 	 ;; a non-negative integer (pixel size), or a floating-point (point size).
 	 ;; Point size is recommended, because it's device independent. (default 10.0)
 	 ;;
@@ -378,9 +381,12 @@ It should only modify the values of Spacemacs settings."
 	 ;; Spacemacs on Windows. Refer the FAQ.org "load-hints" session for details.
 	 dotspacemacs-enable-load-hints nil
 
-	 ;; If t, enable the `package-quickstart' feature to avoid full package
-	 ;; loading, otherwise no `package-quickstart' attemption (default nil).
-	 ;; Refer the FAQ.org "package-quickstart" section for details.
+	 ;; If non-nil, enable the `package-quickstart' feature to avoid activating
+	 ;; all package autoloads one by one.
+	 ;; Requires building and maintaining a quickstart autoload file for all
+	 ;; installed packages.
+	 ;; Refer to the FAQ.org "package-quickstart" section for details.
+	 ;; (default nil)
 	 dotspacemacs-enable-package-quickstart nil
 
 	 ;; If non-nil a progress bar is displayed when spacemacs is loading. This
@@ -476,7 +482,9 @@ It should only modify the values of Spacemacs settings."
 
 	 ;; If non-nil pressing the closing parenthesis `)' key in insert mode passes
 	 ;; over any automatically added closing parenthesis, bracket, quote, etc...
-	 ;; This can be temporary disabled by pressing `C-q' before `)'. (default nil)
+	 ;; This can be temporary disabled by pressing `C-q' before `)'.
+	 ;; Only effective when `dotspacemacs-activate-smartparens-mode' is non-nil.
+	 ;; Redundant when `smartparens-strict-mode' is enabled. (default nil)
 	 dotspacemacs-smart-closing-parenthesis nil
 
 	 ;; Select a scope to highlight delimiters. Possible values are `any',
