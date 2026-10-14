@@ -295,10 +295,10 @@
 	(ispell-set-spellchecker-params)
 
 	;; Add the combined dictionary (order usually doesn't matter)
-	(ispell-hunspell-add-multi-dic "en_IE,de_DE,es_CL")
+	(ispell-hunspell-add-multi-dic "en_AU,de_DE,es_CL")
 
 	;; Set this combined dictionary as the default
-	(setq ispell-dictionary "en_IE,de_DE,es_CL")
+	(setq ispell-dictionary "en_AU,de_DE,es_CL")
 	)
 
 (with-eval-after-load 'magit-mode
