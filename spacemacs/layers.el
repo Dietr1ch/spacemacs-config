@@ -919,7 +919,7 @@
 															 (latex . t)
 															 )
 		)
-	 outshine ;; https://www.spacemacs.org/layers/+emacs/outshine/README.html
+	 ;; BROKEN: outshine ;; https://www.spacemacs.org/layers/+emacs/outshine/README.html
 	 mermaid ;; https://github.com/arnm/mermaid-layer
 
 	 (nginx  ;; https://www.spacemacs.org/layers/+tools/nginx/README.html
